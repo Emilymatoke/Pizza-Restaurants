@@ -49,7 +49,7 @@ class Restaurant(db.Model):
     __tablename__ = 'restaurants'
 
     # Define table columns
-    id = db.Column(db.String, primary_key=True)
+    id = db.Column(db.String, primary_key=True, autoincrement=True)
     name = db.Column(db.String, unique=True)
 
     # Define a validator for restaurant name
@@ -63,3 +63,4 @@ class Restaurant(db.Model):
 
     address = db.Column(db.String)
     
+     
